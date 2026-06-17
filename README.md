@@ -1,38 +1,107 @@
-🖼️ ✏️ Live Sketch Animation Generator
-What if a computer could sketch a picture exactly like an artist drawing it by hand?
+# 🖼️ LiveSketch – AI-Powered Drawing Animation System
 
-This project explores how computer vision can transform a simple image into a live sketch animation, where the drawing is recreated step-by-step instead of being generated instantly.
+### 🎯 Project Overview
 
-🎯 Features
-📸 Upload any image
-⚡ Real-time sketch animation
-🔍 Edge detection using Canny algorithm
-🧠 Contour extraction for drawing paths
-✏️ Simulated pencil-style sketching effect
-🎬 Side-by-side live visualization (Original vs Sketch)
-🧠 How It Works
-1. Image Input
-The user selects an image using a file picker.
+LiveSketch is a computer vision application that converts ordinary images into realistic hand-drawn sketch animations. Instead of displaying the final sketch instantly, the system reconstructs the drawing process stroke-by-stroke, creating the visual effect of an artist sketching in real time.
 
-2. Preprocessing
-The image is resized for faster processing
-Converted to grayscale for better edge detection
-3. Edge Detection
-Canny Edge Detection is applied to find strong boundaries in the image.
+---
 
-4. Contour Detection
-Contours are extracted from the detected edges.
+## ✨ Key Features
 
-These contours represent continuous object boundaries.
+🔹 Upload images from local storage
 
-5. Sketch Animation
-A blank canvas is created
-Contour points are drawn one by one
-A moving cursor simulates real pencil drawing
+🔹 Automatic image-to-sketch conversion
 
+🔹 Real-time drawing animation
 
-🛠️ Tech Stack
-Python 🐍
-OpenCV 👁️
-NumPy 🔢
-Tkinter 🖼️
+🔹 Dynamic pencil cursor simulation
+
+🔹 Edge and contour-based sketch generation
+
+🔹 Side-by-side comparison view
+
+🔹 Lightweight and fast processing
+
+🔹 User-friendly graphical interface
+
+---
+
+## 🧠 Working Process
+
+### 1️⃣ Image Acquisition
+
+The user selects an image through the application interface.
+
+The system loads and prepares the image for processing.
+
+---
+
+### 2️⃣ Image Enhancement
+
+The uploaded image is:
+
+* Resized to improve performance
+* Converted to grayscale
+* Smoothed using Gaussian Blur to reduce noise
+
+This helps generate cleaner sketch outlines.
+
+---
+
+### 3️⃣ Edge Extraction
+
+The application applies Canny Edge Detection to identify important image boundaries.
+
+These edges form the foundation of the sketch.
+
+---
+
+### 4️⃣ Path Generation
+
+Detected edges are converted into contour paths.
+
+The contours represent the sequence of strokes required to recreate the image.
+
+---
+
+### 5️⃣ Sketch Rendering
+
+A blank white canvas is created.
+
+The system gradually draws contour points one after another while displaying a moving pencil cursor.
+
+This creates a realistic hand-sketching animation effect.
+
+---
+
+### 6️⃣ Live Visualization
+
+The original image and generated sketch are displayed simultaneously.
+
+Users can observe how the sketch evolves from start to finish.
+
+---
+
+## 🚀 Applications
+
+🎨 Digital Art Creation
+
+📚 Educational Demonstrations
+
+🎬 Animation & Content Creation
+
+🖥️ Computer Vision Learning
+
+📱 Interactive Media Projects
+
+🧩 Creative Design Prototyping
+
+---
+
+## 🛠️ Technology Stack
+
+* Python 🐍
+* OpenCV 👁️
+* NumPy 🔢
+* Tkinter 🖼️
+* Computer Vision Techniques 🧠
